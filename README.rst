@@ -15,7 +15,7 @@ Usage
 
 - Windows
 
-  **Notes**: Classic CMD console should be used. The PowerShell console buffers all vdbench output as objects and won't pass result line by line which lead to weird behavior.
+  **Notes**: Classic CMD console should be used. The PowerShell console buffers all vdbench output (as STDIN of the next command) and leads to unexpected processing behaviors (refer to `Powershell piping causes explosive memory usage<https://stackoverflow.com/questions/27440768/powershell-piping-causes-explosive-memory-usage>`_ for root cause).
 
   ::
 
